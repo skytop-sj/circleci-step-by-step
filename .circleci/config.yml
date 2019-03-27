@@ -10,7 +10,7 @@ jobs:
         POSTGRES_DB: circle_test
     steps:
     - checkout
-    - run: echo "Hello CircleCI!"
+    - run: echo "Hello CircleCI jdk-8!"
     - run:
         name: Wait for DB
         command: dockerize -wait tcp://127.0.0.1:5432 -timeout 120s
@@ -37,7 +37,7 @@ jobs:
         POSTGRES_DB: circle_test
     steps:
     - checkout
-    - run: echo "Hello CircleCI!"
+    - run: echo "Hello CircleCI on jdk-10!"
     - run:
         name: Wait for DB
         command: dockerize -wait tcp://127.0.0.1:5432 -timeout 120s
@@ -64,7 +64,7 @@ jobs:
         POSTGRES_DB: circle_test
     steps:
     - checkout
-    - run: echo "Hello CircleCI!"
+    - run: echo "Hello CircleCI jdk-11!"
     - run:
         name: Wait for DB
         command: dockerize -wait tcp://127.0.0.1:5432 -timeout 120s
